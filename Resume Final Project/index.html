@@ -3,52 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume 4</title>
+    <title>Resume Final Project</title>
     <link rel="stylesheet" href="./stylesheet.css" />
     <link rel="icon" type="image/x-icon" href="C:\Users\Aveciel\Desktop\my-code\Resume\Images\curriculum_profile_biodata_resume_portofolio_cv_vitae_icon_232635.ico">
   </head>
   <body>
-    <header class="header">     
-
-        <picture class="img">
-        <source media="(max-width:320px)" srcset="../Images/small_image.jpg" alt="small screen image">
-        <source media="(min-width:1024px)" srcset="../Images/medium_image.jpg" alt="medium screen image">
-          <img src="../Images/Harrys_E_meme.jpg" 
-          alt="Portrait of Michaela Dollman. Or it will be eventually." width="200" height="200"/>
-            </picture>
-            
-            
-          
-              <div class="hero-text">
-      <p>
-        <h1>Michaela Dollman</h1>
-        </p>
-        <p>
-        An introductory personal statement.
-        </p>
-      </div>
+    <div class="hero-img">
+      <h4 class="hero-text">Welcome to my digital resume</h4>
+    </div>
     
-      <br />
+    <header class="header">     
+      <div class="header-text">    
+        <h1>Michaela Dollman</h1>
+        <p>Junior Web Developer</p> 
+        <hr>
+      </div>
+
+      <picture class="img">
+        <source media="(max-width:320px)" srcset="../Images/final_image_small.jpeg" alt="small screen image">
+        <source media="(min-width:1024px)" srcset="../Images/final_image_medium.jpeg" alt="medium screen image">
+        <img src="../Images/final_image.jpeg" 
+          alt="Portrait of Michaela Dollman. Or it will be eventually." width="200" height="200"/>
+      </picture>
+            
+      
+    
     </header>
-<section class="section">
-  <aside>
-     <p>
-    <nav class="menu">
+    
+    
+    
+    <section class="section">
+      <aside>
+     <nav class="menu">
      <ul>
       <li><a href="#education">Education</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Education</a></li>
      </ul>
     </nav>
-     </p>
-    
+      </aside>
 
-  </aside>
+
   <article class="article">
-   <p>
-   <h2 id="education">Education</h2>
-   </p>
-   <p>
+    <div id="about-me">
+      <h2>About Me</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+      </p>
+    </div>
+   
+    <div id="education">
+   <h2>Education</h2>
+      <p>
     <h3>Intro to Web at <a href="http://codespace.co.za/" target="_blank"><span class="codespacelink">CodeSpace Academy</span></a></h3>
    </p>
    <p>
@@ -70,7 +76,10 @@
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
    </p>
-   <h2 id="experience">Experience</h2>
+  </div>
+
+  <div id="experience">
+   <h2>Experience</h2>
    <p>
     <h3>Job 1</h3>
    </p>
@@ -93,6 +102,10 @@
         <li>A sentence about the responsibilities of the job</li>
      </ul>
    </p>
+  </div>
+
+
+  <div id="skills">
      <p>
        <h2 id="skills">Skills</h2>
      </p>
@@ -102,7 +115,11 @@
        <li>Skill 3</li>
        <li>Skill 4</li>
      </ul>
+    </div>
+
   </article>
+
+  
 </section>  
 <footer class="footer">
   <h2>Contact Details</h2>
