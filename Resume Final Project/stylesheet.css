@@ -9,6 +9,7 @@ h2 {
   text-decoration: underline;
   font-weight: lighter;
   background-color: #f9f9f9;
+  padding-left: 10px;
 }
 h3 {
   font-weight: lighter;
@@ -56,13 +57,16 @@ hr {
 }
 .menu {
   background-color: #a09e9e8c;
-  display: inline-block;
+  display: flex;
+  justify-content: space-around;
+
   padding-right: 40px;
   padding-left: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
   line-height: 30px;
 }
+
 @media only screen and (min-width: 1024px) {
   body {
     margin-left: 200px;
@@ -76,6 +80,7 @@ hr {
   transform: translate(-50%, -50%); */
   display: flex;
   margin: 0%;
+  padding-right: 50px;
   color: #f9f9f9;
   font-size: 8vh;
 
@@ -88,4 +93,34 @@ hr {
   color: #f9f9f9;
   align-items: flex-end;
   flex-direction: column;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 10px;
+}
+
+#education {
+  grid-column-start: 1;
+}
+
+#experience {
+  grid-column-start: 1;
+}
+
+#skills {
+  grid-row-start: 1;
+  grid-column-start: 2;
+}
+
+.article-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  article {
+    display: block;
+  }
 }
