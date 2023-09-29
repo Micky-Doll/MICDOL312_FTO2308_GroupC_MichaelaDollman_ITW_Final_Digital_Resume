@@ -8,24 +8,26 @@
     <link rel="icon" type="image/x-icon" href="C:\Users\Aveciel\Desktop\my-code\Resume\Images\curriculum_profile_biodata_resume_portofolio_cv_vitae_icon_232635.ico">
   </head>
   <body>
-   <header class="header">
-     
-     <div class="img">
-      <img src="../Images/Harry's E meme.jpg" 
-      alt="Portrait of Michaela Dollman. Or it will be eventually." width="200" height="200"/>
-    </div>
-    <p>
-      <h1>Michaela Dollman</h1>
-      </p>
+    <header class="header">
+      <picture class="img">
+        <source media="(max-width:320px)" srcset="../Images/Harrys_E_meme.jpg" alt="Small screen image">
+        <source media="(min-width:1024px)" srcset="../Images/medium_image.jpg" alt="medium screen image">
+          <img src="../Images/Harry's E meme.jpg" 
+          alt="Portrait of Michaela Dollman. Or it will be eventually." width="200" height="200"/>
+            
+        </picture>
+      
      <p>
-     An introductory personal statement.
-     </p>
-
-     <br />
-   </header>
+       <h1>Michaela Dollman</h1>
+       </p>
+      <p>
+      An introductory personal statement.
+      </p>
+ 
+      <br />
+    </header>
 <section class="section">
   <aside>
-    
      <p>
     <nav class="menu">
      <ul>
@@ -99,9 +101,30 @@
   </article>
 </section>  
 <footer class="footer">
+  <h2>Contact Details</h2>
   <p>
     <a href="https://github.com/Micky-Doll" target="_blank">Github</a> 
   </p>
+  <div class="contactForm">
+    <form action="https://submit.formsubmit.co/michaelaleedollman@gmail.com" method="POST" target="_blank">
+      <label for="subject">Subject (Required):</label>
+      <select id="subject" name="subject" required>
+          <option value="General Inquiry">General Inquiry</option>
+          <option value="Job Opportunity">Job Opportunity</option>
+          <option value="More Information">More Information</option>
+          <option value="Other">Other</option>
+      </select>
+  
+      <label for="email">Your Email (Required):</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+  
+      <button type="submit">Submit</button>
+  </form>
+    </div>
+ 
 </footer>
 </body>
 </html>
